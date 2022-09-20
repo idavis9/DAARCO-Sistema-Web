@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-bar.css">
+    <link rel="stylesheet" href="style-bar2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -15,7 +15,7 @@
 <header class="header">
 
 <div class="logo">
-  <a href="../Home/index.php">
+  <a href="../Registro-Login/panel.php">
     <img src="../img/logotipo2.png" alt="Logo de la marca">
   </a>
 </div>
@@ -24,14 +24,14 @@
         <li><a href="#">Ventas</a></li>
         <li><a href="#">Calculos</a></li>
         <li><a href="#">Cotizaciones</a></li>
-        <li><a href="#">Proveedores</a></li>
+        <li><a href="../Proveedores/lista.php">Proveedores</a></li>
         <li><a href="#">Inventario</a></li>
         <li><a href="#">Proyectos</a></li>
         <li>
                   <div class="dropdown">
                     <a class="btn dropdown-toggle" style="border: none;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                       <img src="../img/perfil-del-usuario.png" alt="" style="width: auto; height: 40px;">
-                      <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>
+                      <?php echo htmlspecialchars($_SESSION["username"]); ?>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>

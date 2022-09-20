@@ -34,6 +34,15 @@
 
 .header .nav-links{
     list-style: none;
+    font-size: 20px;
+}
+
+.header .nav-links .dropdown a{
+    font-size: 20px;
+}
+
+.header .nav-links .dropdown ul li a{
+    font-size: 17px;
 }
 
 .header .nav-links li{
@@ -140,6 +149,10 @@
 
 .Movil{
     display: block;
+}
+
+.Movil a{
+    font-size: 20px;
 }
 
 

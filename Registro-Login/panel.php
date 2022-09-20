@@ -18,7 +18,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Panel-bar/style-bar.css">
+    <link rel="stylesheet" href="../Panel-bar/style-bar2.css">
     <title>Document</title>
 </head>
 <body>
@@ -29,7 +29,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
     <div class="page-header">
-        <h1>Hola, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Bienvenid@ a nuestro sitio.</h1>
+        <h1>Hola, <?php echo htmlspecialchars($_SESSION["username"]); ?>. Bienvenid@ a nuestro sitio.</h1>
             
     </div>
 
