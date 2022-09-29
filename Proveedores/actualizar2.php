@@ -20,31 +20,39 @@ if(!empty($_POST))
 
     } else{
         include "conexion.php";
+        $id = $_POST['id'];
         $nombreempresa= $_POST['nombre_empresa'];
         $direccion = $_POST['direccion'];
         $telefono = $_POST['telefono_empresa'];
         $nombrevendedor= $_POST['nombre_vendedor'];
         $telefonovendedor = $_POST['telefono_vendedor'];
         $email = $_POST['correo'];
-        $username = htmlspecialchars($_SESSION["username"]);
 
-        $query = mysqli_query($conection,"SELECT * FROM proveedor WHERE nombre_empresa = '$nombreempresa' OR correo = '$email'");
-        $result = mysqli_fetch_array($query);
-
-        if($result > 0){
-            $alert='<p class="msg-error" style="color: #e65655;">El nombre de la Empresa o el Correo ya exixten</p>';
-
-        }else{
-            $query_insert = mysqli_query($conection,"INSERT INTO proveedor(nombre_empresa,direccion,telefono_empresa,nombre_vendedor,telefono_vendedor,correo,usuario)VALUES('$nombreempresa','$direccion','$telefono','$nombrevendedor','$telefonovendedor','$email','$username')");
+        
+            $query_insert = mysqli_query($conection,"UPDATE proveedor SET nombre_empresa='$nombreempresa',direccion='$direccion',telefono_empresa='$telefono',nombre_vendedor='$nombrevendedor',telefono_vendedor='$telefonovendedor',correo='$email' WHERE id='$id'");
 
             if($query_insert){
-                $alert='<p class="msg-save" style="color: #126e00;">Proveedor creado exitosamente.</p>';
+                $alert='<p class="msg-save" style="color: #126e00;">Proveedor actualizado exitosamente.</p>';
             }else{
-                $alert='<p class="msg-error" style="color: #e65655;">Error al crear el Proveedor</p>';
+                $alert='<p class="msg-error" style="color: #e65655;">Error al actualizar el Proveedor</p>';
             }
         }
+        
     }
-}
+
+
+?>
+
+<?php 
+
+include("conexion.php");
+
+$id=$_GET['id'];
+
+$sql="SELECT * FROM proveedor WHERE id='$id'";
+$query=mysqli_query($conection,$sql);
+
+$row=mysqli_fetch_array($query);
 
 ?>
 
@@ -66,34 +74,35 @@ if(!empty($_POST))
     <section id="container">
     <div class="titulo-prov">
             <img src="../img/proveedor.png" alt="">
-            <h1>Añadir Proveedores</h1>
+            <h1>Actualizar Proveedores</h1>
         </div>
     <div class="contenedor">
     <div class="form-register">
             
     <?php echo isset($alert) ? $alert : ''; ?>
         <form action="" method="post">
+        <input type="hidden" name="id" value="<?php echo $row['id']  ?>">
                 <label for=nombreempresa>Nombre de la Empresa</label>
-                <input type="text" name="nombre_empresa" class="form-control" placeholder="Nombre de la Empresa">
+                <input type="text" class="form-control" name="nombre_empresa" placeholder="Nombre de la empresa" value="<?php echo $row['nombre_empresa']  ?>">
                 <br>
                 <label for=direccion>Direccion</label>
-                <input type="text" name="direccion" class="form-control" placeholder="Direccion">  
+                <input type="text" class="form-control" name="direccion" placeholder="Direccion" value="<?php echo $row['direccion']  ?>">  
                 <br>
                 <label for=telefono>Telefono</label>
-                <input type="number" name="telefono_empresa" class="form-control" placeholder="Telefono">
+                <input type="number" class="form-control" name="telefono_empresa" placeholder="Telefono de la empresa" value="<?php echo $row['telefono_empresa']  ?>">
                 <br>
                 <label for=nombrevendedor>Nombre del vendedor</label>
-                <input type="text" name="nombre_vendedor" class="form-control" placeholder="Nombre del Vendedor"> 
+                <input type="text" class="form-control" name="nombre_vendedor" placeholder="Nombre del vendedor" value="<?php echo $row['nombre_vendedor']  ?>">
                 <br>
                 <label for=telefonovendedor>Telefono del Vendedor</label>
-                <input type="number" name="telefono_vendedor" class="form-control" placeholder="Telefono del Vendedor">
+                <input type="number" class="form-control" name="telefono_vendedor" placeholder="Telefono del vendedor" value="<?php echo $row['telefono_vendedor']  ?>">
                 <br>
                 <label for=email>Email</label>
-                <input type="text" name="correo" class="form-control" placeholder="Email">
+                <input type="text" class="form-control" name="correo" placeholder="Email" value="<?php echo $row['correo']  ?>">  
                 <br>
 
                 <div class="boton-añadir">
-                    <button type="submit" class="btn btn-dark">+ Añadir</button>
+                    <button type="submit" class="btn btn-dark">Actualizar</button>
                     <a href="lista.php" class="btn btn-dark">Regresar</a>
                  </div>
         </form>

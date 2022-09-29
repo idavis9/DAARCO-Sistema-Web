@@ -35,7 +35,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
-                      <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                      <li><a class="dropdown-item" href="../Registro-Login/logout.php">Cerrar sesión</a></li>
                     </ul>
                   </div>
                 </li>
@@ -67,13 +67,13 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
-              <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+              <li><a class="dropdown-item" href="../Registro-Login/logout.php">Cerrar sesión</a></li>
             </ul>
           </div>
       <a class="nav-link" href="#" style="margin-top: 10px;" >Ventas</a> 
       <a class="nav-link" href="#" style="margin-top: 10px;">Calculos</a> 
       <a class="nav-link" href="#" style="margin-top: 15px;">Cotizaciones</a> 
-      <a class="nav-link" href="#" style="margin-top: 15px;">Proveedores</a>
+      <a class="nav-link" href="../Proveedores/lista.php" style="margin-top: 15px;">Proveedores</a>
       <a class="nav-link" href="#" style="margin-top: 15px;">Inventario</a>
       <a class="nav-link" href="#" style="margin-top: 15px;">Proyectos</a>
       <br>

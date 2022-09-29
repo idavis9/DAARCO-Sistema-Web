@@ -17,8 +17,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-proveedor.css">
-    <link rel="stylesheet" href="../Panel-bar/style-bar2.css">
+    <link rel="stylesheet" href="style-proveedor2.css?v=1.1">
+    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.1">
     <title>Document</title>
 </head>
 
@@ -29,11 +29,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     ?>
 
     <section id="container">
-        <h1>Lista de Proveedores</h1>
-        <a href="proveedor.php" class="btn_new"> Crear Proveedor</a>
-        <table>
+        <div class="titulo-prov">
+            <img src="../img/proveedor.png" alt="" style="width: auto; height: 60px;">
+            <h1>Proveedores</h1>
+        </div>
+        <div class="boton-crear">
+        <a href="proveedor.php" class="btn btn-dark">Añadir Proveedor +</a>
+        </div>
+        <table class="table table-dark table-striped-columns">
             <tr>
-                <th>Id</th>
+             <!--<th>Id</th> -->
                 <th>Nombre de la Empresa</th>
                 <th>Direccion</th>   
                 <th>Telefono</th>
@@ -54,7 +59,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             
             ?>
                 <tr>
-                    <td><?php echo $data["id"]; ?></td>
+                <!--<td><?php echo $data["id"]; ?></td> -->
                     <td><?php echo $data["nombre_empresa"]; ?></td>
                     <td><?php echo $data["direccion"]; ?></td>
                     <td><?php echo $data["telefono_empresa"]; ?></td>
@@ -62,8 +67,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <td><?php echo $data["telefono_vendedor"]; ?></td>
                     <td><?php echo $data["correo"]; ?></td>
                     <td>
-                    <a class="link_edit" href="editar_provedor.php?id=<?php echo $data["id"];?>">Editar</a>
-                    <a class="link_delete" href="#">Eliminar</a>
+                    <a class="btn btn-success" href="actualizar2.php?id=<?php echo $data["id"];?>">Editar</a>
+                    <a class="btn btn-danger" href="eliminar.php?id=<?php echo $data["id"];?>">Eliminar</a>
                     </td>
                 </tr>
         <?php

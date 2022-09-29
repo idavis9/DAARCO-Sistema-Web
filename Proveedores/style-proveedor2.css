@@ -1,0 +1,115 @@
+#container{
+    padding: 5px 2% 5px 2%;
+}
+
+
+.form-register .alert{
+    margin-left: -16px;
+    margin-top: 20px;
+}
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor label{
+    margin-left: 3px;
+}
+
+.form-register{
+    width: 60%;
+    height: auto;
+}
+
+.form-register .boton-añadir{
+    display: flex;
+    justify-content: center;
+}
+
+.form-register .boton-añadir button{
+    font-size: 20px;
+    width: 120px;
+    margin-left: -10px;
+}
+
+.form-register .boton-añadir a{
+    font-size: 20px;
+    width: 120px;
+    margin-left: 10px;
+}
+
+#container .titulo-prov img{
+    width: auto;
+    height: 60px;
+} 
+
+
+/*======== Lista de Proveedores======*/
+#container .titulo-prov{
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+#container .titulo-prov h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#container .boton-crear{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#container .boton-crear a{
+    font-size: 20px;
+}
+
+#container table tr th{
+    text-align: center;
+}
+
+#container table tr td{
+    text-align: center;
+}
+
+
+/* Movil */
+@media screen and (max-width: 767px){
+
+    #container .titulo-prov img{
+        width: auto;
+        height: 45px;
+    } 
+
+    #container .titulo-prov h1{
+        font-size: 25px;
+    } 
+
+    .contenedor{
+        font-size: 16px;
+    }
+
+    .form-register{
+        width: 90%;
+        height: auto;
+    }
+
+    .form-register .boton-añadir button{
+        font-size: 18px;
+        width: 100px;
+        margin-left: -10px;
+    }
+    
+    .form-register .boton-añadir a{
+        font-size: 18px;
+        width: 100px;
+        margin-left: 10px;
+    }
+    
+}
