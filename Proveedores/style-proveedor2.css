@@ -79,6 +79,68 @@
 }
 
 
+/*=======Paginador======*/
+.paginador ul{
+    padding: 15px;
+    list-style: none;
+    background: #FFF;
+    margin-top: 15px;
+    display: flex;   
+    justify-content: flex-end;     
+}
+.paginador a, .pageselected{
+    color: #681319;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    width: 35px;
+    text-decoration: none;
+}
+.paginador a:hover{
+    background: #ddd;
+    color: #681319;
+}
+.pageselected{
+    color: #FFF;
+    background: #681319;
+    border: 1px solid #681319;
+}
+
+.contenedor-campo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-campo .campo{
+    width: 300px;
+    display: flex;
+}
+
+.contenedor-campo .campo p{
+   font-size: 20px;
+   font-weight: 600;
+   margin-left: -10px;
+   margin-top: 4px;
+   margin-bottom: -20px;
+}
+
+.contenedor-campo .campo input{
+    margin-left: 10px;
+}
+
+.contenedor-campo .campo input{
+    color: #ffffff;
+}
+
+.contenedor-campo .campo input:focus{
+    color: #000000;
+}
+
+
+
 /* Movil */
 @media screen and (max-width: 767px){
 

@@ -1,0 +1,91 @@
+.contenedor1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Titulo{
+    text-align: center;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.Titulo img{
+    width: auto; 
+    height: 65px;
+    margin-bottom: 10px;
+}
+
+.Titulo h1{
+    font-weight: 600;
+    font-size: 35px;
+    color: #222528;
+    
+}
+
+
+.botones{
+    width: 80%;
+    justify-content:space-evenly;
+    display: flex;
+    margin-top: 100px;
+}
+
+.botones button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase; /* para poner todo en mayusculas */
+    letter-spacing: 0.4px;
+    color: #7e97b8;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+   }
+   
+ .botones  button:hover {
+    color: #516d91;
+    background-color: #E5EDF5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+   }
+   
+ .botones  button:active {
+    box-shadow: none;
+   }
+
+.botones button a img{
+    width: 50px;
+    height: auto;
+}
+
+.botones button a{
+    text-decoration: none;
+    color: #7e97b8;
+}
+
+.botones button a:hover{
+    text-decoration: none;
+    color: #516d91;
+    
+}
+
+
+
+
+

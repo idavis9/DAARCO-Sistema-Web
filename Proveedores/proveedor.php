@@ -14,13 +14,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 if(!empty($_POST))
 {
     $alert='';
-    if(empty($_POST['nombre_empresa']) || empty($_POST['direccion']) || empty($_POST['telefono_empresa']) || empty($_POST['nombre_vendedor']) || empty($_POST['telefono_vendedor']) || empty($_POST['correo']))
+    if(empty($_POST['nombre_empresa']) || empty($_POST['descripcion']) || empty($_POST['direccion']) || empty($_POST['telefono_empresa']) || empty($_POST['nombre_vendedor']) || empty($_POST['telefono_vendedor']) || empty($_POST['correo']))
     {
         $alert='<p class="msg-error" style="color: #e65655;">*Todos los campos son obligatorios</p>';
 
     } else{
         include "conexion.php";
         $nombreempresa= $_POST['nombre_empresa'];
+        $descripcion = $_POST['descripcion'];
         $direccion = $_POST['direccion'];
         $telefono = $_POST['telefono_empresa'];
         $nombrevendedor= $_POST['nombre_vendedor'];
@@ -35,7 +36,7 @@ if(!empty($_POST))
             $alert='<p class="msg-error" style="color: #e65655;">El nombre de la Empresa o el Correo ya exixten</p>';
 
         }else{
-            $query_insert = mysqli_query($conection,"INSERT INTO proveedor(nombre_empresa,direccion,telefono_empresa,nombre_vendedor,telefono_vendedor,correo,usuario)VALUES('$nombreempresa','$direccion','$telefono','$nombrevendedor','$telefonovendedor','$email','$username')");
+            $query_insert = mysqli_query($conection,"INSERT INTO proveedor(nombre_empresa,descripcion,direccion,telefono_empresa,nombre_vendedor,telefono_vendedor,correo,usuario)VALUES('$nombreempresa','$descripcion','$direccion','$telefono','$nombrevendedor','$telefonovendedor','$email','$username')");
 
             if($query_insert){
                 $alert='<p class="msg-save" style="color: #126e00;">Proveedor creado exitosamente.</p>';
@@ -76,6 +77,9 @@ if(!empty($_POST))
                 <label for=nombreempresa>Nombre de la Empresa</label>
                 <input type="text" name="nombre_empresa" class="form-control" placeholder="Nombre de la Empresa">
                 <br>
+                <label for=nombreempresa>Descripcion de la Empresa</label>
+                <input type="text" name="descripcion" class="form-control" placeholder="Descripcion">
+                <br>
                 <label for=direccion>Direccion</label>
                 <input type="text" name="direccion" class="form-control" placeholder="Direccion">  
                 <br>
@@ -94,7 +98,7 @@ if(!empty($_POST))
 
                 <div class="boton-añadir">
                     <button type="submit" class="btn btn-dark">+ Añadir</button>
-                    <a href="lista.php" class="btn btn-dark">Regresar</a>
+                    <a href="listapru.php" class="btn btn-dark">Regresar</a>
                  </div>
         </form>
         </div>

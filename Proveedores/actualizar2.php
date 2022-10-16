@@ -14,7 +14,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 if(!empty($_POST))
 {
     $alert='';
-    if(empty($_POST['nombre_empresa']) || empty($_POST['direccion']) || empty($_POST['telefono_empresa']) || empty($_POST['nombre_vendedor']) || empty($_POST['telefono_vendedor']) || empty($_POST['correo']))
+    if(empty($_POST['nombre_empresa']) || empty($_POST['descripcion']) || empty($_POST['direccion']) || empty($_POST['telefono_empresa']) || empty($_POST['nombre_vendedor']) || empty($_POST['telefono_vendedor']) || empty($_POST['correo']))
     {
         $alert='<p class="msg-error" style="color: #e65655;">*Todos los campos son obligatorios</p>';
 
@@ -22,6 +22,7 @@ if(!empty($_POST))
         include "conexion.php";
         $id = $_POST['id'];
         $nombreempresa= $_POST['nombre_empresa'];
+        $descripcion = $_POST['descripcion'];
         $direccion = $_POST['direccion'];
         $telefono = $_POST['telefono_empresa'];
         $nombrevendedor= $_POST['nombre_vendedor'];
@@ -29,7 +30,7 @@ if(!empty($_POST))
         $email = $_POST['correo'];
 
         
-            $query_insert = mysqli_query($conection,"UPDATE proveedor SET nombre_empresa='$nombreempresa',direccion='$direccion',telefono_empresa='$telefono',nombre_vendedor='$nombrevendedor',telefono_vendedor='$telefonovendedor',correo='$email' WHERE id='$id'");
+            $query_insert = mysqli_query($conection,"UPDATE proveedor SET nombre_empresa='$nombreempresa',descripcion='$descripcion',direccion='$direccion',telefono_empresa='$telefono',nombre_vendedor='$nombrevendedor',telefono_vendedor='$telefonovendedor',correo='$email' WHERE id='$id'");
 
             if($query_insert){
                 $alert='<p class="msg-save" style="color: #126e00;">Proveedor actualizado exitosamente.</p>';
@@ -85,6 +86,9 @@ $row=mysqli_fetch_array($query);
                 <label for=nombreempresa>Nombre de la Empresa</label>
                 <input type="text" class="form-control" name="nombre_empresa" placeholder="Nombre de la empresa" value="<?php echo $row['nombre_empresa']  ?>">
                 <br>
+                <label for=direccion>Descripcion</label>
+                <input type="text" class="form-control" name="descripcion" placeholder="Descripcion" value="<?php echo $row['descripcion']  ?>">  
+                <br>
                 <label for=direccion>Direccion</label>
                 <input type="text" class="form-control" name="direccion" placeholder="Direccion" value="<?php echo $row['direccion']  ?>">  
                 <br>
@@ -103,7 +107,7 @@ $row=mysqli_fetch_array($query);
 
                 <div class="boton-añadir">
                     <button type="submit" class="btn btn-dark">Actualizar</button>
-                    <a href="lista.php" class="btn btn-dark">Regresar</a>
+                    <a href="listapru.php" class="btn btn-dark">Regresar</a>
                  </div>
         </form>
         </div>

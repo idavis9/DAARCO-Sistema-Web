@@ -24,9 +24,9 @@
         <li><a href="#">Ventas</a></li>
         <li><a href="#">Calculos</a></li>
         <li><a href="#">Cotizaciones</a></li>
-        <li><a href="../Proveedores/lista.php">Proveedores</a></li>
+        <li><a href="../Proveedores/listapru.php">Proveedores</a></li>
         <li><a href="#">Inventario</a></li>
-        <li><a href="#">Proyectos</a></li>
+        <li><a href="../proyectos/proyectos.php">Proyectos</a></li>
         <li>
                   <div class="dropdown">
                     <a class="btn dropdown-toggle" style="border: none;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,9 +73,9 @@
       <a class="nav-link" href="#" style="margin-top: 10px;" >Ventas</a> 
       <a class="nav-link" href="#" style="margin-top: 10px;">Calculos</a> 
       <a class="nav-link" href="#" style="margin-top: 15px;">Cotizaciones</a> 
-      <a class="nav-link" href="../Proveedores/lista.php" style="margin-top: 15px;">Proveedores</a>
+      <a class="nav-link" href="../Proveedores/listapru.php" style="margin-top: 15px;">Proveedores</a>
       <a class="nav-link" href="#" style="margin-top: 15px;">Inventario</a>
-      <a class="nav-link" href="#" style="margin-top: 15px;">Proyectos</a>
+      <a class="nav-link" href="../proyectos/proyectos.php" style="margin-top: 15px;">Proyectos</a>
       <br>
 
     </div>

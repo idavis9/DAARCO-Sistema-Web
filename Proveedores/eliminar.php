@@ -8,6 +8,6 @@ $sql="DELETE FROM proveedor WHERE id='$id'";
 $query=mysqli_query($conection,$sql);
 
     if($query){
-        Header("Location: lista.php");
+        Header("Location: listapru.php");
     }
 ?>
