@@ -95,7 +95,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $confirm_password_err = "No coincide la contraseña.";
         }
     }
-    
+
+
     // Check input errors before inserting in database
     if(empty($username_err) && empty($email_err) && empty($password_err) && empty($confirm_password_err)){
         
@@ -126,10 +127,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     
     // Close connection
     mysqli_close($link);
+
 }
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -150,11 +150,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <div class="sub-contenedor">
 
         <div class="img-login">
-                <img src="../img/logotipo2.png" alt="Logo de la marca"> <br> <br>
+                <img src="../img/DAARCO5.png" alt="Logo de la marca"> <br> <br>
             </div>
 
 
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
 
     <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
         <label>Usuario</label>
@@ -178,7 +178,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <label>Confirmar Contraseña</label>
         <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
         <span class="help-block" style="color: red;"><?php echo $confirm_password_err; ?></span>
-    </div> <br>
+    </div> <br> <br>
 
     <div class="form-group" style="text-align: center;">
         <input type="submit" class="btn" value="Ingresar" style="background-color: #681319; color: white;">

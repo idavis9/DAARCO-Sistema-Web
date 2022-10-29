@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  
     // Validate new password
     if(empty(trim($_POST["new_password"]))){
-        $new_password_err = "Please enter the new password.";     
+        $new_password_err = "Por favor, ingresa la nueva contraseña.";     
     } elseif(strlen(trim($_POST["new_password"])) < 6){
         $new_password_err = "La contraseña al menos debe tener 6 caracteres.";
     } else{
@@ -75,32 +75,37 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Cambia tu contraseña acá</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.2">
+    <link rel="stylesheet" href="style-login2.css?v=1.2">
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Cambia tu contraseña acá</h2>
+    <?php
+        include_once '../Panel-bar/index.php';
+    ?>
+    <div class="conten-text">
+    <img src="../img/recargar.png" alt="">
+        <h2>Cambio de contraseña</h2>
         <p>Complete este formulario para restablecer su contraseña.</p>
+    </div>
+    <div class="conten">
+        <div class="sub-cont">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
             <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
                 <label>Nueva contraseña</label>
                 <input type="password" name="new_password" class="form-control" value="<?php echo $new_password; ?>">
                 <span class="help-block"><?php echo $new_password_err; ?></span>
-            </div>
+            </div> <br>
             <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
                 <label>Confirmar contraseña</label>
                 <input type="password" name="confirm_password" class="form-control">
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
-            </div>
+            </div> <br>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Enviar">
-                <a class="btn btn-link" href="panel.php">Cancelar</a>
+                <a class="btn" href="panel.php">Cancelar</a>
             </div>
         </form>
+        </div>
     </div>    
 </body>
 </html>

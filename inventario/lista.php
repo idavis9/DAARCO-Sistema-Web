@@ -17,8 +17,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-proveedor2.css?v=2.1">
-    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.2">
+    <link rel="stylesheet" href="style-inventario.css?v=1.1">
+    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.1">
     <title>Document</title>
 </head>
 
@@ -30,11 +30,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     <section id="container">
         <div class="titulo-prov">
-            <img src="../img/proveedor2.png" alt="" style="width: auto; height: 60px;">
-            <h1>Proveedores</h1>
+            <img src="../img/inventario.png" alt="" style="width: auto; height: 60px;">
+            <h1>Inventario</h1>
         </div>
         <div class="boton-crear">
-        <a href="proveedor.php" class="btn btn-dark">Añadir Proveedor +</a>
+        <a href="inventario.php" class="btn btn-dark">Añadir Inventario +</a>
         </div>
 
         <div class="contenedor-campo">
@@ -61,13 +61,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             
             <thead>
              <!--<th>Id</th> -->
-                <th>Nombre de la Empresa</th>
-                <th>Descripcion</th>  
-                <th>Direccion</th>   
-                <th>Telefono</th>
-                <th>Nombre del Vendedor</th>
-                <th>Telefono del Vendedor</th>
-                <th>Email</th>
+                <th>Concepto</th>
+                <th>Precio</th>  
+                <th>Cantidad</th>   
+                <th>Total</th>
+                <th>Unidad</th>
+                <th>Descripcion</th>
                 <th>Acciones</th>
             </thead>  
 
@@ -114,7 +113,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 paginaActual = pagina
             }
 
-            let url = "load.php"
+            let url = "load-i.php"
             let formaData = new FormData()
             formaData.append('campo', input)
             formaData.append('registros', num_registros)

@@ -4,12 +4,10 @@ session_start();
  
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
+    header("location: ../Registro-login/login.php");
     exit;
 }
 ?>
-    
-
 
 
 <!DOCTYPE html>
@@ -18,7 +16,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.2">
+    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.1">
     <title>Document</title>
 </head>
 <body>
@@ -28,13 +26,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     ?>
 
 
-    <div class="page-header">
-        <h1>Hola, <?php echo htmlspecialchars($_SESSION["username"]); ?>. Bienvenid@ a nuestro sitio.</h1>
-            
-    </div>
+    <p>Sube tu logotipo aqui:</p>
 
-    <a href="reset-password.php" class="btn btn-warning">Cambia tu contraseña</a>
-    <a href="logout.php" class="btn btn-danger">Cierra la sesión</a>
-    
+
+    <div class="">
+        <label>Logotipo</label>
+        <form action="proceso_guardar.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="logo" class="form-control" style="font-size: 16px;">
+        <input type="submit" value="Aceptar">
+    </div> <br>
 </body>
 </html>

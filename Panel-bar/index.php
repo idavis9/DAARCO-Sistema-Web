@@ -1,10 +1,17 @@
+<?php
+error_reporting(0);
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-bar2.css">
+    <link rel="stylesheet" href="style-bar2.css?v=1.1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -15,8 +22,9 @@
 <header class="header">
 
 <div class="logo">
-  <a href="../Registro-Login/panel.php">
-    <img src="../img/logotipo2.png" alt="Logo de la marca">
+<?php $imag = '../img/DAARCO5.png' ?>
+  <a href="../Registro-Login/panel.php"> 
+    <img src="<?php echo $imag; ?>" alt="Logo de la marca">
   </a>
 </div>
 
@@ -25,16 +33,17 @@
         <li><a href="#">Calculos</a></li>
         <li><a href="#">Cotizaciones</a></li>
         <li><a href="../Proveedores/listapru.php">Proveedores</a></li>
-        <li><a href="#">Inventario</a></li>
+        <li><a href="../inventario/lista.php">Inventario</a></li>
         <li><a href="../proyectos/proyectos.php">Proyectos</a></li>
         <li>
                   <div class="dropdown">
                     <a class="btn dropdown-toggle" style="border: none;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="../img/perfil-del-usuario.png" alt="" style="width: auto; height: 40px;">
+                      <img src="../img/perfil-del-usuario3.png" alt="" style="width: auto; height: 40px;">
                       <?php echo htmlspecialchars($_SESSION["username"]); ?>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
+                      <li><a class="dropdown-item" href="../Logos/index.php">Cambiar Logotipo</a></li>
+                      <li><a class="dropdown-item" href="../Registro-Login/reset-password.php">Cambiar Contraseña</a></li>
                       <li><a class="dropdown-item" href="../Registro-Login/logout.php">Cerrar sesión</a></li>
                     </ul>
                   </div>
@@ -55,7 +64,7 @@
 </button>
 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
   <div class="offcanvas-header">
-    <img style="width: auto; height: 60px;" src="../img/logotipo3.png" alt="Logo de la marca">
+    <img style="width: auto; height: 60px;" src="../img/DAARCO6.png" alt="Logo de la marca">
     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
 
@@ -66,7 +75,8 @@
                 <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
+              <li><a class="dropdown-item" href="../Logos/index.php">Cambiar Logotipo</a></li>
+              <li><a class="dropdown-item" href="../Registro-Login/reset-password.php">Cambiar Contraseña</a></li>
               <li><a class="dropdown-item" href="../Registro-Login/logout.php">Cerrar sesión</a></li>
             </ul>
           </div>
@@ -74,7 +84,7 @@
       <a class="nav-link" href="#" style="margin-top: 10px;">Calculos</a> 
       <a class="nav-link" href="#" style="margin-top: 15px;">Cotizaciones</a> 
       <a class="nav-link" href="../Proveedores/listapru.php" style="margin-top: 15px;">Proveedores</a>
-      <a class="nav-link" href="#" style="margin-top: 15px;">Inventario</a>
+      <a class="nav-link" href="../inventario/lista.php" style="margin-top: 15px;">Inventario</a>
       <a class="nav-link" href="../proyectos/proyectos.php" style="margin-top: 15px;">Proyectos</a>
       <br>
 

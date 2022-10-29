@@ -17,10 +17,10 @@ require 'conexion.php';
 $username = htmlspecialchars($_SESSION["username"]);
 
 /* Un arreglo de las columnas a mostrar en la tabla */
-$columns = ['id', 'nombre_empresa', 'descripcion', 'direccion', 'telefono_empresa', 'nombre_vendedor', 'telefono_vendedor', 'correo','usuario'];
+$columns = ['id', 'concepto', 'precio', 'cantidad', 'precio * cantidad', 'unidad', 'descripcion', 'usuario'];
 
 /* Nombre de la tabla */
-$table = "proveedor";
+$table = "inventario";
 $id = 'id';
 
 $campo = isset($_POST['campo']) ? $conection->real_escape_string($_POST['campo']) : null;
@@ -79,16 +79,16 @@ $output['totalFiltro'] = $totalFiltro;
 $output['data'] = '';
 $output['paginacion'] = '';
 
+
 if ($num_rows > 0) {
     while ($row = $resultado->fetch_assoc()) {
         $output['data'] .= '<tr>';
-        $output['data'] .= '<td>' . $row['nombre_empresa'] . '</td>';
+        $output['data'] .= '<td>' . $row['concepto'] . '</td>';
+        $output['data'] .= '<td> <p>$' . number_format($row['precio'], 2) . '</td>';
+        $output['data'] .= '<td>' . $row['cantidad'] . '</td>';
+        $output['data'] .= '<td> <p>$' . number_format($row['precio * cantidad'], 2) . '</td>'; 
+        $output['data'] .= '<td>' . $row['unidad'] . '</td>';
         $output['data'] .= '<td>' . $row['descripcion'] . '</td>';
-        $output['data'] .= '<td>' . $row['direccion'] . '</td>';
-        $output['data'] .= '<td>' . $row['telefono_empresa'] . '</td>';
-        $output['data'] .= '<td>' . $row['nombre_vendedor'] . '</td>';
-        $output['data'] .= '<td>' . $row['telefono_vendedor'] . '</td>';
-        $output['data'] .= '<td>' . $row['correo'] . '</td>';
         $output['data'] .= '<td>
         <a class="btn btn-secondary" href="actualizar2.php?id='. $row['id'] . '"><img src="../img/editar.png" alt="" style="width: 25px; height: 25px;"></a>
         <a class="btn btn-danger" href="eliminar.php?id='. $row['id'] . '" onclick="return ConfirmDelete()"><img src="../img/basura.png" alt="" style="width: 25px; height: 25px;"></a>
@@ -137,6 +137,3 @@ if($output['totalRegistros'] > 0){
 echo json_encode($output, JSON_UNESCAPED_UNICODE);
 
 ?>
-
-
-

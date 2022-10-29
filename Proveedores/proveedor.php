@@ -66,7 +66,7 @@ if(!empty($_POST))
 
     <section id="container">
     <div class="titulo-prov">
-            <img src="../img/proveedor.png" alt="">
+            <img src="../img/proveedor2.png" alt="">
             <h1>Añadir Proveedores</h1>
         </div>
     <div class="contenedor">

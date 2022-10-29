@@ -107,7 +107,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <div class="sub-contenedor">
 
             <div class="img-login">
-                <img src="../img/logotipo2.png" alt="Logo de la marca"> <br> <br>
+                <img src="../img/DAARCO5.png" alt="Logo de la marca"> <br> <br>
             </div>
 
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
