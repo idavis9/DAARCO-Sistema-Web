@@ -90,8 +90,8 @@ if ($num_rows > 0) {
         $output['data'] .= '<td>' . $row['unidad'] . '</td>';
         $output['data'] .= '<td>' . $row['descripcion'] . '</td>';
         $output['data'] .= '<td>
-        <a class="btn btn-secondary" href="actualizar2.php?id='. $row['id'] . '"><img src="../img/editar.png" alt="" style="width: 25px; height: 25px;"></a>
-        <a class="btn btn-danger" href="eliminar.php?id='. $row['id'] . '" onclick="return ConfirmDelete()"><img src="../img/basura.png" alt="" style="width: 25px; height: 25px;"></a>
+        <a class="btn btn-secondary" href="actualizar-in.php?id='. $row['id'] . '"><img src="../img/editar.png" alt="" style="width: 25px; height: 25px;"></a>
+        <a class="btn btn-danger" href="eliminar-in.php?id='. $row['id'] . '" onclick="return ConfirmDelete()"><img src="../img/basura.png" alt="" style="width: 25px; height: 25px;"></a>
         </td>';
         $output['data'] .= '</tr>';
     }

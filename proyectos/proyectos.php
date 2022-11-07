@@ -17,10 +17,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.2">
-    <link rel="stylesheet" href="style-proyectos.css?v=1.6">
+    <link rel="stylesheet" href="style-proyectos.css?v=1.7">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #e0e0e0">
     
     <?php
         include_once '../Panel-bar/index.php';
@@ -28,7 +28,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
    
    <div class="contenedor1">
     <div class="Titulo">
-    <img src="../img/guardar.png" alt="">
+    <img src="../img/guardar2.png" alt="">
         <h1>
             Gestiona tus proyectos aquí:
         </h1>

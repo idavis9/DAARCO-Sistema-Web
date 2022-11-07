@@ -18,11 +18,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-inventario.css?v=1.1">
-    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.1">
+    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.2">
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color: #e0e0e0">
 
     <?php
         include_once '../Panel-bar/index.php';

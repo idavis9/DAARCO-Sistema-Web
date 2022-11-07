@@ -64,17 +64,17 @@ $row=mysqli_fetch_array($query);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-proveedor2.css?v=1.4">
-    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.1">
+    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.2">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #e0e0e0">
     <?php
         include_once '../Panel-bar/index.php';
     ?>
 
     <section id="container">
     <div class="titulo-prov">
-            <img src="../img/proveedor.png" alt="">
+            <img src="../img/proveedor2.png" alt="">
             <h1>Actualizar Proveedores</h1>
         </div>
     <div class="contenedor">

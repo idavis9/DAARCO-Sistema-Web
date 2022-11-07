@@ -22,7 +22,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <title>Document</title>
 </head>
 
-<body>
+<body style="background-color: #e0e0e0">
 
     <?php
         include_once '../Panel-bar/index.php';

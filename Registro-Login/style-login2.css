@@ -51,10 +51,108 @@
 }
 
 .conten .sub-cont{
-    width: 30%;
+    width: 400px;
     font-size: 20px;
     font-weight: 600;
 }
+
+/*fondo pagina principal*/
+.panel-cont{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url(../img/fondo.jpg);
+}
+
+.sub-panel{
+    width: 100%;
+    height: 88.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+.titulo-pri {
+    width: 100%;
+    text-align: center;
+    font-family: Arial rgb(70, 9, 9); 
+    font-weight: bold; 
+    font-size: 70px; 
+    color: rgb(109, 18, 18); 
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+    }
+*/
+
+/* principal panel */
+.card{
+    margin-top: -50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: inset 5px 5px 10px #ffffff46,
+                 inset -5px -5px 10px #ffffff47; 
+   }
+   
+   .card .img{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-top: 1.6em;
+    border-radius: 30%;
+    background: #ffffffec;
+    margin-bottom: 0.4em;
+    /*
+    box-shadow: -5px -5px 8px #ffffff7a, 
+                 5px 5px 8px #a9a9aa7a; */
+    align-items: center;
+    justify-content: center;
+   }
+
+   .card .img img{
+    width: 280px;
+    height: auto;
+   /* filter: drop-shadow(5px 5px 4px rgba(255, 255, 255, 0.864));  darle contorno de sombra a texto o imagen*/
+   }
+   
+   .card .info {
+    text-align: center;
+    margin-top: -0.4em;
+    background: linear-gradient(180deg, rgb(187, 7, 7) 0%, rgb(37, 37, 37) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(3px 3px 3px rgba(255, 255, 255, 0.83));
+   }
+   
+   .card .info > span {
+    font-weight: bold;
+    font-size: 5em;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+   }
+
+   .card .info p{
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-top: -12px;
+    -webkit-text-stroke: .5px rgb(255, 255, 255);
+   }
+
+
+/* Tablet */
+@media screen and (max-width: 1137px){
+
+  .panel-cont{
+    background-position: center;
+  }
+    
+}
+
 
 
 /* Movil */
@@ -86,5 +184,30 @@
         height: auto;
     }
 
+    /* contenedor principal panel
+
+    .card .img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .card .img img{
+        width: 180px;
+        height: auto;
+    }
+
+    .card .info > span {
+        font-size: 3em;
+    }
+
+    .card .info p{
+        font-size: 1.5em;
+
+    }
+
+    .card{
+        padding-left: 20px;
+        padding-right: 20px;
+    } */
 
 }
