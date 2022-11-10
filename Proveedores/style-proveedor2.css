@@ -167,6 +167,11 @@
     color: #000000;
 }
 
+.contenedor-campo .datos-cliente{
+    font-size: 25px;
+    font-weight: 600;
+}
+
 
 
 /* Movil */

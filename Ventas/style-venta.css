@@ -1,0 +1,15 @@
+.datos-campo .datos-cliente{
+    font-size: 20px;
+    font-weight: 600;
+    width: 500px;
+}
+
+.datos-campo .datos-cliente input{
+    margin-top: -15px;
+}
+
+.datos-campo .datos-cliente p{
+    margin-top: 5px;
+}
+
+

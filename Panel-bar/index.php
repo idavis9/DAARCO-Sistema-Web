@@ -29,9 +29,9 @@ error_reporting(0);
 </div>
 
 <nav class="nav-links">
-        <li><a href="#">Ventas</a></li>
+        <li><a href="../Ventas/venta.php">Ventas</a></li>
         <li><a href="#">Calculos</a></li>
-        <li><a href="#">Cotizaciones</a></li>
+        <li><a href="../Cotizaciones/precios.php">Cotizaciones</a></li>
         <li><a href="../Proveedores/listapru.php">Proveedores</a></li>
         <li><a href="../inventario/lista.php">Inventario</a></li>
         <li><a href="../proyectos/proyectos.php">Proyectos</a></li>
