@@ -11,7 +11,7 @@
 /* Barra de navegacion PC*/
 
 .header{
-    background-color: #ffffff;
+    background-color: #ffffff9d;
     display: flex;
     justify-content:space-between; 
     align-items: center;
@@ -63,7 +63,7 @@
     font-weight: 600;
     color: #000000;
     padding: 9px 25px;
-    background: #ffffff;
+    background: #ffffff00;
     border: solid;
     border-width: 2px;
     border-color: #000000;
@@ -143,6 +143,11 @@
     display: block;
 }
 
+.header .btn button{
+    background-color: #ffffff;
+    border: none;
+}
+
 
 
 }
@@ -152,7 +157,7 @@
 @media screen and (max-width: 767px){
 
 .header{
-    background-color: #ffffff;
+    background-color: #ffffff00;
 }
 
 

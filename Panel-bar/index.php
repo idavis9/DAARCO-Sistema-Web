@@ -42,7 +42,7 @@ error_reporting(0);
                       <?php echo htmlspecialchars($_SESSION["username"]); ?>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="../Logos/index.php">Cambiar Logotipo</a></li>
+                    <!--  <li><a class="dropdown-item" href="../Logos/index.php">Cambiar Logotipo</a></li> -->
                       <li><a class="dropdown-item" href="../Registro-Login/reset-password.php">Cambiar Contraseña</a></li>
                       <li><a class="dropdown-item" href="../Registro-Login/logout.php">Cerrar sesión</a></li>
                     </ul>
@@ -75,7 +75,7 @@ error_reporting(0);
                 <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="../Logos/index.php">Cambiar Logotipo</a></li>
+            <!--  <li><a class="dropdown-item" href="../Logos/index.php">Cambiar Logotipo</a></li> -->
               <li><a class="dropdown-item" href="../Registro-Login/reset-password.php">Cambiar Contraseña</a></li>
               <li><a class="dropdown-item" href="../Registro-Login/logout.php">Cerrar sesión</a></li>
             </ul>

@@ -27,7 +27,8 @@ if(($_POST))
            $producto = $_POST['producto'];
 
             if($producto == $concepto){
-                $array = [$precio];
+                $array = $precio;
+                echo $array;
                 } 
                 }  
     } else {
@@ -67,7 +68,7 @@ if(($_POST))
 
         <div class="datos-campo">
                 <div class="datos-cliente">
-                    <form action="#" method="post">
+                    <form action="" method="post">
                     <p>Folio</p>
                     <input type="text" name="folio" id="folio" class="form-control">
                     <p>Cliente</p>
