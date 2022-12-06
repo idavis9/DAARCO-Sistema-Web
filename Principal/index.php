@@ -20,7 +20,7 @@
         </div>
 
         <nav class="nav-links">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="../Home/index.php">Inicio</a></li>
                 <li>
                   <div class="dropdown">
                     <a class="btn dropdown-toggle" style="border: none;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,12 +29,12 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                       <li><a class="dropdown-item" href="../Home/arquitectura.php">Arquitectura</a></li>
                       <li><a class="dropdown-item" href="../Home/construccion.php">Construcción</a></li>
-                      <li><a class="dropdown-item" href="../Home/venta.php">Venta de materiales</a></li>
+                      <li><a class="dropdown-item" href="#">Venta de materiales</a></li>
                     </ul>
                   </div>
                 </li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="../Home/nosotros.php">Nosotros</a></li>
+                <li><a href="../Home/contacto.php">Contacto</a></li>
         </nav>
 
         <div class="Botones">
