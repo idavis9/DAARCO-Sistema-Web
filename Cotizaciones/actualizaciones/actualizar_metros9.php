@@ -8,5 +8,5 @@ error_reporting(0);
     $resultado5 = $conection->query($sql5);
 
     if($resultado5){
-        Header("Location: ../cimientos.php");
+        Header("Location: ../muros.php");
     }

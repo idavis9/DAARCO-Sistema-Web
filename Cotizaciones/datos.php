@@ -11,6 +11,7 @@ error_reporting(0);
            $concepto = $row["concepto"];
            $precio = $row["precio"];
            $unidad = $row["unidad"];
+           //Cimientos
            $total = 0;
            $total2 = 0;
            $total3 = 0;
@@ -20,6 +21,27 @@ error_reporting(0);
            $total7 = 0;
            $total8 = 0;
            $total9 = 0;
+           $total10 = 0; //no usado por el momento
+           //---------------------------------
+           //Muros
+           $total11 = 0;
+           $total12 = 0;
+           $total13 = 0;
+           $total14 = 0;
+           $total15 = 0;
+           $total16 = 0;
+           $total17 = 0;
+           $total18 = 0;
+           $total19 = 0; //no usado por el momento
+
+           //---------------------------------
+           //Boveda
+           $total20 = 0; //no usado por el momento
+           $total21 = 0; //no usado por el momento
+           $total22 = 0; //no usado por el momento
+           $total23 = 0; //no usado por el momento
+
+
 
            //Variales para obtener los datos dependiendo del producto
            $Piedrabraza = "Piedra braza";
@@ -46,8 +68,8 @@ error_reporting(0);
            $Rentadebobcat = "Renta de bobcat";
            $Rentadebailarina = "Renta de bailarina";
            $Alambreelectrosoldado = "Alambre electrosoldado";
-           $Ladrillobarra38 = "Ladrillo barra 38cm";
-           $Ladrilloabodon = "Ladrillo abodon";
+           $Ladrillobarra38 = "ladrillo barra 38cm";
+           $Ladrilloadobon = "Ladrillo adobon";
            $Vigueta = "Vigueta";
            $Viguetacuata = "Vigueta cuata";
            $Puentedecarga30 = "Puente de carga 30cm";
@@ -106,6 +128,7 @@ error_reporting(0);
            $Soclo = "Soclo";
            $Manodeobrapisorectificado = "Mano de obra piso rectificado";
            $Manodeobrasoclo = "Mano de obra soclo";
+           $Manodeobralosa = "Mano de obra losa";
 
            //Obteniendo los metros para los calculos:
          /* if($_POST){
@@ -222,9 +245,9 @@ error_reporting(0);
                 $precio_ladrillobarra38 = $precio;
                 $unidad_ladrillobarra38 = $unidad;
             } 
-            else if($Ladrilloabodon == $concepto){
-                $precio_ladrilloabodon = $precio;
-                $unidad_ladrilloabodon = $unidad;
+            else if($Ladrilloadobon == $concepto){
+                $precio_ladrilloadobon = $precio;
+                $unidad_ladrilloadobon = $unidad;
             } 
             else if($Vigueta == $concepto){
                 $precio_vigueta = $precio;
@@ -331,8 +354,8 @@ error_reporting(0);
                 $unidad_manodeobraestampado = $unidad;
             } 
             else if($Manodeobramuro == $concepto){
-                $precio_Manodeobramuro = $precio;
-                $unidad_Manodeobramuro = $unidad;
+                $precio_manodeobramuro = $precio;
+                $unidad_manodeobramuro = $unidad;
             } 
             else if($Manodeobrabovedaadobon == $concepto){
                 $precio_manodeobrabovedaadobon = $precio;
@@ -453,6 +476,10 @@ error_reporting(0);
             else if($Manodeobrasoclo == $concepto){
                 $precio_manodeobrasoclo = $precio;
                 $unidad_manodeobrasoclo = $unidad;
+            } 
+            else if($Manodeobralosa == $concepto){
+                $precio_manodeobralosa = $precio;
+                $unidad_manodeobralosa = $unidad;
             } 
         
         }  

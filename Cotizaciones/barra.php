@@ -19,7 +19,8 @@ error_reporting(0);
         <li><a href="precios.php">Precios</a></li> |
         <li><a href="cimientos.php">Cimientos</a></li> |
         <li><a href="muros.php">Muros</a></li> |
-        <li><a href="boveda.php">Boveda</a></li> 
+        <li><a href="boveda.php">Boveda</a></li> |
+        <li><a href="total.php">Total</a></li> 
     </nav>
 
     </div>

@@ -75,3 +75,12 @@
     transform: scale(1.1);
 }
 
+.totales{
+    display: none;
+}
+
+.todo{
+    display: flex;
+    flex-direction: column; /*Alinear items en forma horizontal */
+    align-items: center;
+}
