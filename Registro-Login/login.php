@@ -95,10 +95,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Principal/style4.css">
-    <link rel="stylesheet" href="style-login2.css">
+    <link rel="stylesheet" href="style-login2.css?v=1.1">
     <title>Login</title>
 </head>
-<body>
+<body style="background-color: #e0e0e0">
     <?php
         include_once '../Principal/index.php';
     ?>

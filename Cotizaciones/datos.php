@@ -13,6 +13,13 @@ error_reporting(0);
            $unidad = $row["unidad"];
            $total = 0;
            $total2 = 0;
+           $total3 = 0;
+           $total4 = 0;
+           $total5 = 0;
+           $total6 = 0;
+           $total7 = 0;
+           $total8 = 0;
+           $total9 = 0;
 
            //Variales para obtener los datos dependiendo del producto
            $Piedrabraza = "Piedra braza";
@@ -30,7 +37,11 @@ error_reporting(0);
            $Rentadeformas = "Renta de formas";
            $Anillos1010 = "Anillos 10 x 10";
            $Anillos1015 = "Anillos 10 x 15";
-           $Anillos2015 = "Anillos 20 x 15";
+           $Anillos1520 = "Anillos 15 x 20";
+           $Anillos1020 = "Anillos 10 x 20";
+           $Anillos2020 = "Anillos 20 x 20";
+           $Anillos3030 = "Anillos 30 x 30";
+           $Anillos4040 = "Anillos 40 x 40";
            $Tepetate = "Tepetate";
            $Rentadebobcat = "Renta de bobcat";
            $Rentadebailarina = "Renta de bailarina";
@@ -48,18 +59,66 @@ error_reporting(0);
            $Manodeobracimiento = "Mano de obra cimiento";
            $Manodeobrazapata = "Mano de obra zapata";
            $Manodeobrazapatacorrida = "Mano de obra zapata corrida";
-           $Manodeobraformas = "Mano de obra formas";
            $Manodeobracadenas = "Mano de obra cadenas";
            $Manodeobracompactado= "Mano de obra compactado";
-           $Manodeobrafirme = "Mano de obra firme";
-           
-
+           $Angulo = "Angulo";
+           $Manodeobraformas15cm = "Mano de obra formas 15cm";
+           $Manodeobraformas20cm = "Mano de obra formas 20cm";
+           $Manodeobracastillo10x10 = "Mano de obra castillo 10 x 10";
+           $Manodeobracastillo10x15 = "Mano de obra castillo 10 x 15";
+           $Manodeobracolumna15x30 = "Mano de obra columna 15 x 30";
+           $Manodeobracolumna20x30 = "Mano de obra columna 20 x 30";
+           $Manodeobracolumna30x30 = "Mano de obra columna 30 x 30";
+           $Manodeobracolumna40x40 = "Mano de obra columna 40 x 40";
+           $Manodeobracolumna50x50 = "Mano de obra columna 50 x 50";
+           $Manodeobrafirme8cm = "Mano de obra firme 8cm";
+           $Manodeobrafirme10cm = "Mano de obra firme 10cm";
+           $Manodeobraestampado = "Mano de obra estampado";
+           $Manodeobramuro = "Mano de obra muro";
+           $Manodeobrabovedaadobon = "Mano de obra boveda adobon";
+           $Camiondeescombro = "Camion de escombro";
+           $Sellador = "Sellador";
+           $Manodeobrarepararenjarre = "Mano de obra reparar enjarre";
+           $Manodeobraenjarreregleado = "Mano de obra enjarre regleado";
+           $Manodeobraenjarrepulido = "Mano de obra enjarre pulido";
+           $Pulidoespejo = "Pulido espejo";
+           $Manodeobrapulidoespejo = "Mano de obra pulido espejo";
+           $Textura = "Textura";
+           $Manodeobratextura = "Mano de obra textura";
+           $Yeso = "Yeso";
+           $Moldurasyeso = "Molduras yeso";
+           $Manodeobrayeso = "Mano deobra yeso";
+           $Manodeobramoldurasyeso = "Mano de obra molduras yeso";
+           $Fachaleta = "Fachaleta";
+           $Pegapiedra = "Pega piedra";
+           $Manodeobrafachaleta = "Mano de obra fachaleta";
+           $Piedra = "Piedra";
+           $Boquilla = "Boquilla";
+           $Manodeobrapiedra = "Mano de obra piedra";
+           $Barniz = "Barniz";
+           $Azulejo = "Azulejo";
+           $Piso = "Piso";
+           $Pegazulejo = "Pegazulejo";
+           $Pegapiso = "Pegapiso";
+           $Manodeobraazulejo = "Mano de obra azulejo";
+           $Manodeobrapiso = "Mano de obra piso";
+           $Pisorectificado = "Piso rectificado";
+           $Soclo = "Soclo";
+           $Manodeobrapisorectificado = "Mano de obra piso rectificado";
+           $Manodeobrasoclo = "Mano de obra soclo";
 
            //Obteniendo los metros para los calculos:
-           if($_POST){
+         /* if($_POST){
             $metros1 = $_POST['metros1'];
             $piezas1 = $_POST['piezas1'];
-           }
+            $piezas2 = $_POST['piezas2'];
+            $metros2 = $_POST['metros2'];
+            $metros3 = $_POST['metros3'];
+            $metros4 = $_POST['metros4'];
+            $metros5 = $_POST['metros5'];
+            $metros6 = $_POST['metros6'];
+            $metros7 = $_POST['metros7'];
+           }  */
 
 
            //Obteniendo los valores dependiendo del producto
@@ -123,9 +182,25 @@ error_reporting(0);
                 $precio_anillos1015 = $precio;
                 $unidad_anillos1015 = $unidad;
             } 
-            else if($Anillos2015 == $concepto){
-                $precio_anillos2015 = $precio;
-                $unidad_anillos2015 = $unidad;
+            else if($Anillos1520 == $concepto){
+                $precio_anillos1520 = $precio;
+                $unidad_anillos1520 = $unidad;
+            } 
+            else if($Anillos1020 == $concepto){
+                $precio_anillos1020 = $precio;
+                $unidad_anillos1020 = $unidad;
+            } 
+            else if($Anillos2020 == $concepto){
+                $precio_anillos2020 = $precio;
+                $unidad_anillos2020 = $unidad;
+            } 
+            else if($Anillos3030 == $concepto){
+                $precio_anillos3030 = $precio;
+                $unidad_anillos3030 = $unidad;
+            } 
+            else if($Anillos4040 == $concepto){
+                $precio_anillos4040 = $precio;
+                $unidad_anillos4040 = $unidad;
             } 
             else if($Tepetate == $concepto){
                 $precio_tepetate = $precio;
@@ -194,11 +269,7 @@ error_reporting(0);
             else if($Manodeobrazapatacorrida == $concepto){
                 $precio_manodeobrazapatacorrida = $precio;
                 $unidad_manodeobrazapatacorrida = $unidad;
-            } 
-            else if($Manodeobraformas == $concepto){
-                $precio_manodeobraformas = $precio;
-                $unidad_manodeobraformas = $unidad;
-            } 
+            }  
             else if($Manodeobracadenas == $concepto){
                 $precio_manodeobracadenas = $precio;
                 $unidad_manodeobracadenas = $unidad;
@@ -207,10 +278,183 @@ error_reporting(0);
                 $precio_manodeobracompactado = $precio;
                 $unidad_manodeobracompactado = $unidad;
             } 
-            else if($Manodeobrafirme == $concepto){
-                $precio_manodeobrafirme = $precio;
-                $unidad_manodeobrafirme = $unidad;
+            else if($Angulo == $concepto){
+                $precio_angulo = $precio;
+                $unidad_angulo = $unidad;
             } 
+            else if($Manodeobraformas15cm == $concepto){
+                $precio_manodeobraformas15cm = $precio;
+                $unidad_manodeobraformas15cm = $unidad;
+            } 
+            else if($Manodeobraformas20cm == $concepto){
+                $precio_manodeobraformas20cm = $precio;
+                $unidad_manodeobraformas20cm = $unidad;
+            } 
+            else if($Manodeobracastillo10x10 == $concepto){
+                $precio_manodeobracastillo10x10 = $precio;
+                $unidad_manodeobracastillo10x10 = $unidad;
+            } 
+            else if($Manodeobracastillo10x15 == $concepto){
+                $precio_manodeobracastillo10x15 = $precio;
+                $unidad_manodeobracastillo10x15 = $unidad;
+            } 
+            else if($Manodeobracolumna15x30 == $concepto){
+                $precio_manodeobracolumna15x30 = $precio;
+                $unidad_manodeobracolumna15x30 = $unidad;
+            } 
+            else if($Manodeobracolumna20x30 == $concepto){
+                $precio_manodeobracolumna20x30 = $precio;
+                $unidad_manodeobracolumna20x30 = $unidad;
+            } 
+            else if($Manodeobracolumna30x30 == $concepto){
+                $precio_manodeobracolumna30x30 = $precio;
+                $unidad_manodeobracolumna30x30 = $unidad;
+            } 
+            else if($Manodeobracolumna40x40 == $concepto){
+                $precio_manodeobracolumna40x40 = $precio;
+                $unidad_manodeobracolumna40x40 = $unidad;
+            } 
+            else if($Manodeobracolumna50x50 == $concepto){
+                $precio_manodeobracolumna50x50 = $precio;
+                $unidad_manodeobracolumna50x50 = $unidad;
+            } 
+            else if($Manodeobrafirme8cm == $concepto){
+                $precio_manodeobrafirme8cm = $precio;
+                $unidad_manodeobrafirme8cm = $unidad;
+            } 
+            else if($Manodeobrafirme10cm == $concepto){
+                $precio_manodeobrafirme10cm = $precio;
+                $unidad_manodeobrafirme10cm = $unidad;
+            } 
+            else if($Manodeobraestampado == $concepto){
+                $precio_manodeobraestampado = $precio;
+                $unidad_manodeobraestampado = $unidad;
+            } 
+            else if($Manodeobramuro == $concepto){
+                $precio_Manodeobramuro = $precio;
+                $unidad_Manodeobramuro = $unidad;
+            } 
+            else if($Manodeobrabovedaadobon == $concepto){
+                $precio_manodeobrabovedaadobon = $precio;
+                $unidad_manodeobrabovedaadobon = $unidad;
+            } 
+            else if($Camiondeescombro == $concepto){
+                $precio_Camiondeescombro = $precio;
+                $unidad_Camiondeescombro = $unidad;
+            } 
+            else if($Sellador == $concepto){
+                $precio_sellador = $precio;
+                $unidad_sellador = $unidad;
+            } 
+            else if($Manodeobrarepararenjarre == $concepto){
+                $precio_manodeobrarepararenjarre = $precio;
+                $unidad_manodeobrarepararenjarre = $unidad;
+            } 
+            else if($Manodeobraenjarreregleado == $concepto){
+                $precio_manodeobraenjarreregleado = $precio;
+                $unidad_manodeobraenjarreregleado = $unidad;
+            } 
+            else if($Manodeobraenjarrepulido == $concepto){
+                $precio_manodeobraenjarrepulido = $precio;
+                $unidad_manodeobraenjarrepulido = $unidad;
+            } 
+            else if($Pulidoespejo == $concepto){
+                $precio_pulidoespejo = $precio;
+                $unidad_pulidoespejo = $unidad;
+            } 
+            else if($Manodeobrapulidoespejo == $concepto){
+                $precio_manodeobrapulidoespejo = $precio;
+                $unidad_manodeobrapulidoespejo = $unidad;
+            } 
+            else if($Manodeobratextura == $concepto){
+                $precio_manodeobratextura = $precio;
+                $unidad_manodeobratextura = $unidad;
+            } 
+            else if($Yeso == $concepto){
+                $precio_yeso = $precio;
+                $unidad_yeso = $unidad;
+            } 
+            else if($Moldurasyeso == $concepto){
+                $precio_moldurasyeso = $precio;
+                $unidad_moldurasyeso = $unidad;
+            } 
+            else if($Manodeobrayeso == $concepto){
+                $precio_manodeobrayeso = $precio;
+                $unidad_manodeobrayeso = $unidad;
+            } 
+            else if($Manodeobramoldurasyeso == $concepto){
+                $precio_manodeobramoldurasyeso = $precio;
+                $unidad_manodeobramoldurasyeso = $unidad;
+            } 
+            else if($Fachaleta == $concepto){
+                $precio_fachaleta= $precio;
+                $unidad_fachaleta = $unidad;
+            } 
+            else if($Pegapiedra == $concepto){
+                $precio_pegapiedra = $precio;
+                $unidad_pegapiedra = $unidad;
+            } 
+            else if($Manodeobrafachaleta == $concepto){
+                $precio_manodeobrafachaleta = $precio;
+                $unidad_manodeobrafachaleta = $unidad;
+            } 
+            else if($Piedra == $concepto){
+                $precio_piedra = $precio;
+                $unidad_piedra = $unidad;
+            } 
+            else if($Boquilla == $concepto){
+                $precio_boquilla = $precio;
+                $unidad_boquilla = $unidad;
+            } 
+            else if($Manodeobrapiedra == $concepto){
+                $precio_manodeobrapiedra = $precio;
+                $unidad_manodeobrapiedra = $unidad;
+            }
+            else if($Barniz == $concepto){
+                $precio_barniz = $precio;
+                $unidad_barniz = $unidad;
+            }  
+            else if($Azulejo == $concepto){
+                $precio_azulejo = $precio;
+                $unidad_azulejo = $unidad;
+            } 
+            else if($Piso == $concepto){
+                $precio_piso = $precio;
+                $unidad_piso = $unidad;
+            } 
+            else if($Pegazulejo == $concepto){
+                $precio_pegazulejo = $precio;
+                $unidad_pegazulejo = $unidad;
+            } 
+            else if($Pegapiso == $concepto){
+                $precio_pegapiso = $precio;
+                $unidad_pegapiso = $unidad;
+            } 
+            else if($Manodeobraazulejo == $concepto){
+                $precio_manodeobraazulejo = $precio;
+                $unidad_manodeobraazulejo = $unidad;
+            } 
+            else if($Manodeobrapiso == $concepto){
+                $precio_manodeobrapiso = $precio;
+                $unidad_manodeobrapiso = $unidad;
+            } 
+            else if($Pisorectificado == $concepto){
+                $precio_pisorectificado = $precio;
+                $unidad_pisorectificado = $unidad;
+            } 
+            else if($Soclo == $concepto){
+                $precio_soclo = $precio;
+                $unidad_soclo = $unidad;
+            } 
+            else if($Manodeobrapisorectificado == $concepto){
+                $precio_manodeobrapisorectificado = $precio;
+                $unidad_manodeobrapisorectificado = $unidad;
+            } 
+            else if($Manodeobrasoclo == $concepto){
+                $precio_manodeobrasoclo = $precio;
+                $unidad_manodeobrasoclo = $unidad;
+            } 
+        
         }  
     }
 ?>

@@ -138,10 +138,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Principal/style4.css">
-    <link rel="stylesheet" href="style-login2.css">
+    <link rel="stylesheet" href="style-login2.css?v=1.1">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #e0e0e0">
     <?php
         include_once '../Principal/index.php';
     ?>
@@ -149,7 +149,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <div class="contenedor" style="margin-top: 0px;">
         <div class="sub-contenedor">
 
-        <div class="img-login">
+        <div class="img-login" style="margin-top: 30px;">
                 <img src="../img/DAARCO5.png" alt="Logo de la marca"> <br> <br>
             </div>
 
@@ -184,7 +184,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <input type="submit" class="btn" value="Ingresar" style="background-color: #681319; color: white;">
         <input type="reset" class="btn" value="Borrar" style="background-color: black; color: white;">
     </div> <br>
-    <p>¿Ya tienes una cuenta? <a href="login.php">Ingresa aquí</a>.</p>
+    <p>¿Ya tienes una cuenta? <a href="login.php">Ingresa aquí</a>.</p> <br> 
 
 </form>
 

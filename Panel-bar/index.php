@@ -29,8 +29,7 @@ error_reporting(0);
 </div>
 
 <nav class="nav-links">
-        <li><a href="../Ventas/venta.php">Ventas</a></li>
-        <li><a href="#">Calculos</a></li>
+        <li><a href="#">Ventas</a></li>
         <li><a href="../Cotizaciones/precios.php">Cotizaciones</a></li>
         <li><a href="../Proveedores/listapru.php">Proveedores</a></li>
         <li><a href="../inventario/lista.php">Inventario</a></li>
@@ -81,8 +80,7 @@ error_reporting(0);
             </ul>
           </div>
       <a class="nav-link" href="#" style="margin-top: 10px;" >Ventas</a> 
-      <a class="nav-link" href="#" style="margin-top: 10px;">Calculos</a> 
-      <a class="nav-link" href="#" style="margin-top: 15px;">Cotizaciones</a> 
+      <a class="nav-link" href="../Cotizaciones/precios.php" style="margin-top: 15px;">Cotizaciones</a> 
       <a class="nav-link" href="../Proveedores/listapru.php" style="margin-top: 15px;">Proveedores</a>
       <a class="nav-link" href="../inventario/lista.php" style="margin-top: 15px;">Inventario</a>
       <a class="nav-link" href="../proyectos/proyectos.php" style="margin-top: 15px;">Proyectos</a>
