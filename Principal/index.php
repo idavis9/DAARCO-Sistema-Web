@@ -29,7 +29,7 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                       <li><a class="dropdown-item" href="../Home/arquitectura.php">Arquitectura</a></li>
                       <li><a class="dropdown-item" href="../Home/construccion.php">Construcción</a></li>
-                      <li><a class="dropdown-item" href="#">Venta de materiales</a></li>
+                     <!-- <li><a class="dropdown-item" href="#">Venta de materiales</a></li> -->
                     </ul>
                   </div>
                 </li>
@@ -66,9 +66,9 @@
                        Servicios
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Arquitectura</a></li>
-                      <li><a class="dropdown-item" href="#">Construcción</a></li>
-                      <li><a class="dropdown-item" href="#">Venta de materiales</a></li>
+                      <li><a class="dropdown-item" href="../Home/arquitectura.php">Arquitectura</a></li>
+                      <li><a class="dropdown-item" href="../Home/construccion.php">Construcción</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">Venta de materiales</a></li> -->
                     </ul>
                   </div>
               <a class="nav-link" href="#" style="margin-top: 10px;">Nosotros</a> 

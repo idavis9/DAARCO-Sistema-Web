@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Principal/style4.css?v=1.2">
-    <link rel="stylesheet" href="style-home.css?v=1.2">
+    <link rel="stylesheet" href="style-home.css?v=1.9">
     <title>Document</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
             <span class="circle" aria-hidden="true">
             <span class="icon arrow"></span>
             </span>
-            <span class="button-text">Contacto</span>
+            <a href="contacto.php"><span class="button-text">Contacto</span></a>
             </button>
         </div>
 
@@ -81,7 +81,9 @@
   </button>
 </div>
 
-
+<?php
+        include_once 'footer.php';
+    ?>
 
 
 </body>

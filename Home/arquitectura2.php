@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style-home.css?v=1.6">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #e0e0e0">
 
     <?php
         include_once '../Principal/index.php';
@@ -106,7 +106,7 @@
 </nav>
 
 
-
+</div>
 
 
     <script>
@@ -114,5 +114,9 @@
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
     
+
+    <?php
+        include_once 'footer.php';
+    ?>
 </body>
 </html>

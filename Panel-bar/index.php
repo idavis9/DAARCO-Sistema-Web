@@ -29,7 +29,7 @@ error_reporting(0);
 </div>
 
 <nav class="nav-links">
-        <li><a href="#">Ventas</a></li>
+       <!-- <li><a href="#">Ventas</a></li> -->
         <li><a href="../Cotizaciones/precios.php">Cotizaciones</a></li>
         <li><a href="../Proveedores/listapru.php">Proveedores</a></li>
         <li><a href="../inventario/lista.php">Inventario</a></li>
@@ -79,7 +79,7 @@ error_reporting(0);
               <li><a class="dropdown-item" href="../Registro-Login/logout.php">Cerrar sesión</a></li>
             </ul>
           </div>
-      <a class="nav-link" href="#" style="margin-top: 10px;" >Ventas</a> 
+     <!-- <a class="nav-link" href="#" style="margin-top: 10px;" >Ventas</a>  -->
       <a class="nav-link" href="../Cotizaciones/precios.php" style="margin-top: 15px;">Cotizaciones</a> 
       <a class="nav-link" href="../Proveedores/listapru.php" style="margin-top: 15px;">Proveedores</a>
       <a class="nav-link" href="../inventario/lista.php" style="margin-top: 15px;">Inventario</a>
