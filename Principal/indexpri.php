@@ -14,32 +14,32 @@
 <header class="header">
 
         <div class="logo">
-          <a href="../index.php">
-            <img src="../img/logotipo2.png" alt="Logo de la marca">
+          <a href="index.php">
+            <img src="./img/logotipo2.png" alt="Logo de la marca">
           </a>
         </div>
 
         <nav class="nav-links">
-                <li><a href="../index.php">Inicio</a></li>
+                <li><a href="index.php">Inicio</a></li>
                 <li>
                   <div class="dropdown">
                     <a class="btn dropdown-toggle" style="border: none;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                        Servicios
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="../Home/arquitectura.php">Arquitectura</a></li>
-                      <li><a class="dropdown-item" href="../Home/construccion.php">Construcción</a></li>
+                      <li><a class="dropdown-item" href="./Home/arquitectura.php">Arquitectura</a></li>
+                      <li><a class="dropdown-item" href="./Home/construccion.php">Construcción</a></li>
                      <!-- <li><a class="dropdown-item" href="#">Venta de materiales</a></li> -->
                     </ul>
                   </div>
                 </li>
-                <li><a href="../Home/nosotros.php">Nosotros</a></li>
-                <li><a href="../Home/contacto.php">Contacto</a></li>
+                <li><a href="./Home/nosotros.php">Nosotros</a></li>
+                <li><a href="./Home/contacto.php">Contacto</a></li>
         </nav>
 
         <div class="Botones">
-            <a class="btn" href="../Registro-Login/login.php"><button>Iniciar Sesión</button></a>
-            <a class="btn2" href="../Registro-Login/registro.php"><button>Regístrate</button></a>
+            <a class="btn" href="./Registro-Login/login.php"><button>Iniciar Sesión</button></a>
+            <a class="btn2" href="./Registro-Login/registro.php"><button>Regístrate</button></a>
         </div>
 
 

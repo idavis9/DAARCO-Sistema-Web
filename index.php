@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Principal/style4.css?v=1.2">
-    <link rel="stylesheet" href="style-home.css?v=1.9">
+    <link rel="stylesheet" href="./Principal/style4.css?v=1.2">
+    <link rel="stylesheet" href="./Home/style-home.css?v=1.9">
     <title>Document</title>
 </head>
 <body>
 
 <div class="home-cont">
     <?php
-        include_once '../Principal/index.php';
+        include_once './Principal/indexpri.php';
     ?>
 
     <div  class="sub-cont">
         <div class="imagen">
-            <img src="../img/logotipo2_2.png" alt="">
+            <img src="./img/logotipo2_2.png" alt="">
         </div>
         <br><br> <br>
         
@@ -26,7 +26,7 @@
             <span class="circle" aria-hidden="true">
             <span class="icon arrow"></span>
             </span>
-            <a href="contacto.php"><span class="button-text">Contacto</span></a>
+            <a href="./Home/contacto.php"><span class="button-text">Contacto</span></a>
             </button>
         </div>
 
@@ -41,7 +41,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./slider/11.jpg" class="d-block w-100" alt="">
+      <img src="./Home/slider/11.jpg" class="d-block w-100" alt="">
       <div class="carousel-caption d-md-block">
         <h5>Diseños Arquitectónicos</h5>
         <p> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -51,7 +51,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./slider/22.jpg" class="d-block w-100" alt="...">
+      <img src="./Home/slider/22.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-md-block">
         <h5>Construcción de obras</h5>
         <p> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -61,7 +61,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="./slider/33.jpg" class="d-block w-100" alt="...">
+      <img src="./Home/slider/33.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-md-block">
         <h5>Compra/Venta de casas y terrenos</h5>
         <p> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -82,7 +82,7 @@
 </div>
 
 <?php
-        include_once 'footer.php';
+        include_once './Home/footer.php';
     ?>
 
 
