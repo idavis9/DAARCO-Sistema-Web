@@ -82,7 +82,7 @@
 </div>
 
 <?php
-        include_once './Home/footer.php';
+        include_once './Home/footer2.php';
     ?>
 
 

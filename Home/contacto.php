@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Principal/style4.css?v=1.2">
-    <link rel="stylesheet" href="style-home.css?v=1.7">
+    <link rel="stylesheet" href="style-home.css?v=2.1">
     <title>Document</title>
 </head>
 <body>
