@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Principal/style4.css?v=1.2">
-    <link rel="stylesheet" href="style-home.css?v=2.1">
+    <link rel="stylesheet" href="style-home2.css?v=1.1">
     <title>Document</title>
 </head>
 <body>
 
 
 <div class="nosotros-cont">
-
-
     <?php
         include_once '../Principal/index.php';
     ?>
