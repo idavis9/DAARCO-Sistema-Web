@@ -20,8 +20,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../inventario/style-inventario.css?v=1.1">
-    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.2">
+    <link rel="stylesheet" href="../inventario/style-inventario.css?v=1.6">
+    <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.8">
     <link rel="stylesheet" href="style-cot.css?v=1.8">
     <title>Document</title>
 </head>
@@ -41,13 +41,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             include_once 'barra.php';
         ?>
 
-        <div class="totales">
+        <div class="d-totales">
             <?php
-                require_once 'cimientos.php';
-                require_once 'Muros.php';
-                require_once 'Boveda.php'
+            require_once 'cimientos.php';
             ?>
-        </div> <br>
+        </div>
+        <div class="d-totales2">
+            <?php
+            require_once 'Muros.php';
+            ?>
+        </div> 
+        <div class="d-totales">
+            <?php
+            require_once 'Boveda.php';
+            ?>
+        </div><br>
 
         <div class="todo">
      <!-- Totales -->

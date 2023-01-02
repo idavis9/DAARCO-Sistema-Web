@@ -75,12 +75,36 @@
     transform: scale(1.1);
 }
 
-.totales{
+.d-totales {
     display: none;
+}
+
+.d-totales2{
+    display: none
 }
 
 .todo{
     display: flex;
     flex-direction: column; /*Alinear items en forma horizontal */
     align-items: center;
+}
+
+/* Movil */
+@media screen and (max-width: 767px){
+    
+    .conten{
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .conten nav{
+        justify-content: normal;
+        padding: 0px;
+    }
+
+    .d-carrusel{
+        overflow: auto;
+        white-space: nowrap;
+    }
+
 }

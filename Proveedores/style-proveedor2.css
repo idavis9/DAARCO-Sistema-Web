@@ -206,5 +206,40 @@
         width: 100px;
         margin-left: 10px;
     }
+
+    .contenedor-campo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-campo .campo{
+        padding-left: 5px;
+        width: 80%;
+    }
+
+    .contenedor-campo .campo p{
+        margin: 0px;
+    }
+
+    .contenedor-campo .campo input{
+        width: 90%;
+    }
+
+    .contenedor-campo .campo2{
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+
+    .contenedor-campo .campo2 p{
+        margin: 0px;
+    }
+
+    /*Para encapsular muchas cosas en un slider*/
+    .d-carrusel{
+        overflow: auto;
+        white-space: nowrap; /*Para que todo se mantenga en orden*/
+       /*overflow-y: hidden; */
+       /*overflow: hidden; Sirve para ocultar cuando algo se desborda de un div*/
+    }
     
 }

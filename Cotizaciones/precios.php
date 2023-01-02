@@ -1,9 +1,9 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: ../Registro-login/login.php");
     exit;
 }
@@ -13,20 +13,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../inventario/style-inventario.css?v=1.1">
+    <link rel="stylesheet" href="../inventario/style-inventario.css?v=1.6">
     <link rel="stylesheet" href="../Panel-bar/style-bar2.css?v=1.2">
-    <link rel="stylesheet" href="style-cot.css?v=1.2">
+    <link rel="stylesheet" href="style-cot.css?v=1.6">
     <title>Document</title>
 </head>
 
 <body style="background-color: #e0e0e0">
 
     <?php
-        include_once '../Panel-bar/index.php';
+    include_once '../Panel-bar/index.php';
     ?>
 
     <section id="container">
@@ -35,56 +36,58 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <h1>Precios</h1>
         </div>
         <?php
-            include_once 'barra.php';
+        include_once 'barra.php';
         ?>
         <br>
 
         <div class="contenedor-campo">
-                <div class="campo">
-                    <p>Buscar: </p>
-                    <form action="" method="post">
+            <div class="campo">
+                <p>Buscar: </p>
+                <form action="" method="post">
                     <input type="text" name="campo" id="campo" class="form-control">
-                    </form>
-                </div>
+                </form>
+            </div>
 
-                <div class="regis">
-                    <select name="num_registros" id="num_registros" class="form-select">
-                        <option value="500">500</option>
-                    </select>
-                   
-                </div>
+            <div class="regis">
+                <select name="num_registros" id="num_registros" class="form-select">
+                    <option value="500">500</option>
+                </select>
+
+            </div>
         </div>
         <br>
 
-      <!--  <table class="table" style="background-color: #681319; color:white; margin-bottom: -1px;">
+        <!--  <table class="table" style="background-color: #681319; color:white; margin-bottom: -1px;">
             <thead>
                 <th style="font-size: 23px;">
                     Cimiento de mampostería
                 </th>
             </thead>
         </table> -->
+        <div class="d-carrusel">
         <table class="table table-light table-striped">
             <thead>
-             <!--<th>Id</th> -->
+                <!--<th>Id</th> -->
                 <th style="background-color: #681319; color:white; font-size: 20px;">Concepto</th>
-                <th style="background-color: #681319; color:white; font-size: 20px;">Precio</th>  
-                <th style="background-color: #681319; color:white; font-size: 20px;">Unidad</th>   
+                <th style="background-color: #681319; color:white; font-size: 20px;">Precio</th>
+                <th style="background-color: #681319; color:white; font-size: 20px;">Unidad</th>
                 <th style="background-color: #681319; color:white; font-size: 20px;">Editar</th>
-            </thead>  
+            </thead>
 
-             <!-- El id del cuerpo de la tabla. -->
-             <tbody id="content">
+            <!-- El id del cuerpo de la tabla. -->
+            <tbody id="content">
 
             </tbody>
-            </table>
+        </table>
     </section>
+    </div>
 
     <div class="contenedor-paginacion">
-    <label id="lbl-total"></label>
+        <label id="lbl-total"></label>
 
-    <div id="nav-paginacion" class="paginacion">
+        <div id="nav-paginacion" class="paginacion">
 
-    </div>
+        </div>
 
     </div>
 
@@ -97,10 +100,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         getData(paginaActual)
 
         /* Escuchar un evento keyup en el campo de entrada y luego llamar a la función getData. */
-        document.getElementById("campo").addEventListener("keyup", function(){
+        document.getElementById("campo").addEventListener("keyup", function () {
             getData(1)
         }, false)
-        document.getElementById("num_registros").addEventListener("change", function(){
+        document.getElementById("num_registros").addEventListener("change", function () {
             getData(paginaActual)
         }, false)
 
@@ -111,7 +114,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
             let content = document.getElementById("content")
 
-            if(pagina != null){
+            if (pagina != null) {
                 paginaActual = pagina
             }
 
@@ -123,17 +126,18 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
             fetch(url, {
-                    method: "POST",
-                    body: formaData
-                }).then(response => response.json())
+                method: "POST",
+                body: formaData
+            }).then(response => response.json())
                 .then(data => {
                     content.innerHTML = data.data
-                    document.getElementById("lbl-total").innerHTML ='Mostrando ' + data.totalFiltro +
-                    ' de ' + data.totalRegistros + ' registros'
+                    document.getElementById("lbl-total").innerHTML = 'Mostrando ' + data.totalFiltro +
+                        ' de ' + data.totalRegistros + ' registros'
                     document.getElementById("nav-paginacion").innerHTML = data.paginacion
                 }).catch(err => console.log(err))
         }
-        </script>
-    
+    </script>
+
 </body>
+
 </html>

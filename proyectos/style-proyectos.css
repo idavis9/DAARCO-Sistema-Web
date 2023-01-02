@@ -85,6 +85,59 @@
 }
 
 
+/* Tablet */
+@media screen and (max-width: 1137px) {
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .botones button{
+        margin-top: 40px;
+    }
+
+    .botones .bot1{
+        margin-top: 0px;
+    }
+
+
+}
+
+
+/* Movil */
+@media screen and (max-width: 767px) {
+
+    .Titulo img{
+        height: 45px;
+    }
+    
+    .Titulo h1{
+        font-size: 25px;
+    }
+
+    .botones{
+        width: 85%;
+    }
+
+    .botones button{
+        margin-top: 40px;
+    }
+
+    .botones .bot1{
+        margin-top: -40px;
+    }
+
+    .botones button a img{
+        width: 30px;
+        height: auto;
+    }
+
+}
+
+
 
 
 
