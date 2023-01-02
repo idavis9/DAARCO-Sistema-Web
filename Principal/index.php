@@ -60,7 +60,7 @@
           </div>
 
             <div class="offcanvas-body">
-              <a class="nav-link" href="#" >Inicio</a> 
+              <a class="nav-link" href="../index.php" >Inicio</a> 
               <div class="dropdown">
                     <a class="btn dropdown-toggle" style="border: none; color: white; margin-top: 10px; margin-left: -16px;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                        Servicios
@@ -71,8 +71,8 @@
                       <!-- <li><a class="dropdown-item" href="#">Venta de materiales</a></li> -->
                     </ul>
                   </div>
-              <a class="nav-link" href="#" style="margin-top: 10px;">Nosotros</a> 
-              <a class="nav-link" href="#" style="margin-top: 15px;">Contacto</a> <br>
+              <a class="nav-link" href="../Home/nosotros.php" style="margin-top: 10px;">Nosotros</a> 
+              <a class="nav-link" href="../Home/contacto.php" style="margin-top: 15px;">Contacto</a> <br>
               
             <a class="btn" href="../Registro-Login/login.php" style="border: none;"><button>Iniciar Sesión</button></a>
             <a class="btn2" href="../Registro-Login/registro.php" style="border: none;"><button>Regístrate</button></a>

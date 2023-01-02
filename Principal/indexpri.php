@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style4.css?v=1.2">
+    <link rel="stylesheet" href="style4.css?v=2.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>DAARCO</title>
 </head>
@@ -55,27 +55,27 @@
         </button>
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div class="offcanvas-header">
-            <img style="width: auto; height: 60px;" src="../img/logotipo3.png" alt="Logo de la marca">
+            <img style="width: auto; height: 60px;" src="./img/logotipo3.png" alt="Logo de la marca">
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
 
             <div class="offcanvas-body">
-              <a class="nav-link" href="#" >Inicio</a> 
+              <a class="nav-link" href="index.php" >Inicio</a> 
               <div class="dropdown">
                     <a class="btn dropdown-toggle" style="border: none; color: white; margin-top: 10px; margin-left: -16px;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                        Servicios
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="../Home/arquitectura.php">Arquitectura</a></li>
-                      <li><a class="dropdown-item" href="../Home/construccion.php">Construcción</a></li>
+                      <li><a class="dropdown-item" href="./Home/arquitectura.php">Arquitectura</a></li>
+                      <li><a class="dropdown-item" href="./Home/construccion.php">Construcción</a></li>
                       <!-- <li><a class="dropdown-item" href="#">Venta de materiales</a></li> -->
                     </ul>
                   </div>
-              <a class="nav-link" href="#" style="margin-top: 10px;">Nosotros</a> 
-              <a class="nav-link" href="#" style="margin-top: 15px;">Contacto</a> <br>
+              <a class="nav-link" href="./Home/nosotros.php" style="margin-top: 10px;">Nosotros</a> 
+              <a class="nav-link" href="./Home/contacto.php" style="margin-top: 15px;">Contacto</a> <br>
               
-            <a class="btn" href="../Registro-Login/login.php" style="border: none;"><button>Iniciar Sesión</button></a>
-            <a class="btn2" href="../Registro-Login/registro.php" style="border: none;"><button>Regístrate</button></a>
+            <a class="btn" href="./Registro-Login/login.php" style="border: none;"><button>Iniciar Sesión</button></a>
+            <a class="btn2" href="./Registro-Login/registro.php" style="border: none;"><button>Regístrate</button></a>
        
             </div>
        </div>

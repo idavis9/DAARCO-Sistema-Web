@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Principal/style4.css?v=1.2">
-    <link rel="stylesheet" href="style-home.css?v=1.6">
+    <link rel="stylesheet" href="../Principal/style4.css?v=2.0">
+    <link rel="stylesheet" href="style-home.css?v=3.0">
     <title>Document</title>
 </head>
 <body style="background-color: #e0e0e0">
